@@ -1,124 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
 
     <!-- to be used as base font -->
     <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> -->
 
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <!-- Project: Admin Dashboard -->
     <div class="container">
-        <header>
-            <div class="top">
-                <div class="left">
-                    <span class="search-icon icon-container">
-                        <img src="./icons/magnify.svg" alt="Search Icon" class="icon">
-                    </span>
-                    <input type="text" name="search-bar" disabled id="search-bar" class="search-bar">
+      <header>
+        <div class="top">
+          <div class="left">
+            <span class="search-icon icon-container">
+              <img src="./icons/magnify.svg" alt="Search Icon" class="icon" />
+            </span>
+            <input
+              type="text"
+              name="search-bar"
+              disabled
+              id="search-bar"
+              class="search-bar"
+            />
+          </div>
+          <div class="right">
+            <span class="bell-icon icon-container">
+              <img
+                src="./icons/bell-ring-outline.svg"
+                class="icon"
+                alt="Notifications Icon"
+              />
+            </span>
+            <span class="profile-img-container">
+              <img
+                src="./images/avatar2.png"
+                alt="Morgan Oakley's Profile Image"
+                class="profile-img"
+              />
+            </span>
+            <span class="admin-name bold-text profile-name"
+              >Morgan&nbsp;Oakley</span
+            >
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="left">
+            <span class="profile-img-container">
+              <img
+                src="./images/avatar2.png"
+                alt="Morgan Oakley's Profile Image"
+                class="profile-img"
+              />
+            </span>
+            <div>
+              <p class="bold-500">Hi there,</p>
+              <h2 class="bold-text admin-name">Morgan Oakley (@morgan)</h2>
+            </div>
+          </div>
+          <ul class="settings-tabs-container right">
+            <li>New</li>
+            <li>Upload</li>
+            <li>Share</li>
+          </ul>
+        </div>
+      </header>
+      <aside>
+        <div class="dashboard">
+          <span class="icon-container dashboard">
+            <img src="./icons/view-dashboard.svg" alt="Dashboard Icon" />
+          </span>
+          <span>Dashboard</span>
+        </div>
+
+        <ul>
+          <li>
+            <span class="icon-container home">
+              <img src="./icons/home-outline.svg" alt="Home Icon" />
+            </span>
+            <span>Home</span>
+          </li>
+          <li>
+            <span class="icon-container profile">
+              <img
+                src="./icons/card-account-details-outline.svg"
+                alt="Profile Card Icon"
+              />
+            </span>
+            <span>Profile</span>
+          </li>
+          <li>
+            <span class="icon-container messages">
+              <img src="./icons/message-reply.svg" alt="Message Icon" />
+            </span>
+            <span>Messages</span>
+          </li>
+          <li>
+            <span class="icon-container history">
+              <img
+                src="./icons/clock-time-three-outline.svg"
+                alt="History Icon"
+              />
+            </span>
+            <span>History</span>
+          </li>
+          <li>
+            <span class="icon-container tasks">
+              <img src="./icons/file-multiple.svg" alt="Tasks Icon" />
+            </span>
+            <span>Tasks</span>
+          </li>
+          <li>
+            <span class="icon-container communities">
+              <img src="./icons/account-group.svg" alt="Communities Icon" />
+            </span>
+            <span>Communities</span>
+          </li>
+        </ul>
+
+        <ul class="extra-settings">
+          <li>
+            <span class="icon-container settings">
+              <img src="./icons/cog.svg" alt="Settings Icon" />
+            </span>
+            <span>Settings</span>
+          </li>
+
+          <li>
+            <span class="icon-container support">
+              <img src="./icons/help-box.svg" alt="Support Icon" />
+            </span>
+            <span>Support</span>
+          </li>
+          <li>
+            <span class="icon-container privacy">
+              <img src="./icons/shield-check.svg" alt="Privacy Icon" />
+            </span>
+            <span>Privacy</span>
+          </li>
+        </ul>
+      </aside>
+      <main>
+        <div class="projects">
+          <h3>Your Projects</h3>
+
+          <div class="projects-cards">
+            <div class="project-card">
+              <div class="color-bar"></div>
+              <div class="content-area">
+                <h4 class="project-header">Some Cool Project</h4>
+                <p class="project-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi molestiae commodi velit atque, nisi aliquam non quasi
+                  quo repellat exercitationem quibusdam possimus
+                </p>
+                <div class="project-icon-group">
+                  <span class="icon-container star">
+                    <img src="./icons/star-plus-outline.svg" alt="Star Icon" />
+                  </span>
+                  <span class="icon-container eye">
+                    <img src="./icons/eye-plus-outline.svg" alt="Eye Icon" />
+                  </span>
+                  <span class="icon-container source-fork">
+                    <img src="./icons/source-fork.svg" alt="Source Fork Icon">
+                  </span>
                 </div>
-                <div class="right">
-                    <span class="bell-icon icon-container">
-                        <img src="./icons/bell-ring-outline.svg" class="icon" alt="Notifications Icon">
+              </div>
+            </div>
+            <div class="project-card">
+                <div class="color-bar"></div>
+                <div class="content-area">
+                  <h4 class="project-header">Some Cool Project</h4>
+                  <p class="project-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi molestiae commodi velit atque, nisi aliquam non quasi
+                    quo repellat exercitationem quibusdam possimus
+                  </p>
+                  <div class="project-icon-group">
+                    <span class="icon-container star">
+                      <img src="./icons/star-plus-outline.svg" alt="Star Icon" />
                     </span>
-                    <span class="profile-img-container">
-                        <img src="./images/avatar2.png" alt="Morgan Oakley's Profile Image" class="profile-img">
+                    <span class="icon-container eye">
+                      <img src="./icons/eye-plus-outline.svg" alt="Eye Icon" />
                     </span>
-                    <span class="admin-name bold-text profile-name">Morgan&nbsp;Oakley</>
+                    <span class="icon-container source-fork">
+                      <img src="./icons/source-fork.svg" alt="Source Fork Icon">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="color-bar"></div>
+                <div class="content-area">
+                  <h4 class="project-header">Some Cool Project</h4>
+                  <p class="project-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi molestiae commodi velit atque, nisi aliquam non quasi
+                    quo repellat exercitationem quibusdam possimus
+                  </p>
+                  <div class="project-icon-group">
+                    <span class="icon-container star">
+                      <img src="./icons/star-plus-outline.svg" alt="Star Icon" />
+                    </span>
+                    <span class="icon-container eye">
+                      <img src="./icons/eye-plus-outline.svg" alt="Eye Icon" />
+                    </span>
+                    <span class="icon-container source-fork">
+                      <img src="./icons/source-fork.svg" alt="Source Fork Icon">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="color-bar"></div>
+                <div class="content-area">
+                  <h4 class="project-header">Some Cool Project</h4>
+                  <p class="project-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi molestiae commodi velit atque, nisi aliquam non quasi
+                    quo repellat exercitationem quibusdam possimus
+                  </p>
+                  <div class="project-icon-group">
+                    <span class="icon-container star">
+                      <img src="./icons/star-plus-outline.svg" alt="Star Icon" />
+                    </span>
+                    <span class="icon-container eye">
+                      <img src="./icons/eye-plus-outline.svg" alt="Eye Icon" />
+                    </span>
+                    <span class="icon-container source-fork">
+                      <img src="./icons/source-fork.svg" alt="Source Fork Icon">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="color-bar"></div>
+                <div class="content-area">
+                  <h4 class="project-header">Some Cool Project</h4>
+                  <p class="project-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi molestiae commodi velit atque, nisi aliquam non quasi
+                    quo repellat exercitationem quibusdam possimus
+                  </p>
+                  <div class="project-icon-group">
+                    <span class="icon-container star">
+                      <img src="./icons/star-plus-outline.svg" alt="Star Icon" />
+                    </span>
+                    <span class="icon-container eye">
+                      <img src="./icons/eye-plus-outline.svg" alt="Eye Icon" />
+                    </span>
+                    <span class="icon-container source-fork">
+                      <img src="./icons/source-fork.svg" alt="Source Fork Icon">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="color-bar"></div>
+                <div class="content-area">
+                  <h4 class="project-header">Some Cool Project</h4>
+                  <p class="project-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi molestiae commodi velit atque, nisi aliquam non quasi
+                    quo repellat exercitationem quibusdam possimus
+                  </p>
+                  <div class="project-icon-group">
+                    <span class="icon-container star">
+                      <img src="./icons/star-plus-outline.svg" alt="Star Icon" />
+                    </span>
+                    <span class="icon-container eye">
+                      <img src="./icons/eye-plus-outline.svg" alt="Eye Icon" />
+                    </span>
+                    <span class="icon-container source-fork">
+                      <img src="./icons/source-fork.svg" alt="Source Fork Icon">
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="project-card">
+                <div class="color-bar"></div>
+                <div class="content-area">
+                  <h4 class="project-header">Some Cool Project</h4>
+                  <p class="project-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Eligendi molestiae commodi velit atque, nisi aliquam non quasi
+                    quo repellat exercitationem quibusdam possimus
+                  </p>
+                  <div class="project-icon-group">
+                    <span class="icon-container star">
+                      <img src="./icons/star-plus-outline.svg" alt="Star Icon" />
+                    </span>
+                    <span class="icon-container eye">
+                      <img src="./icons/eye-plus-outline.svg" alt="Eye Icon" />
+                    </span>
+                    <span class="icon-container source-fork">
+                      <img src="./icons/source-fork.svg" alt="Source Fork Icon">
+                    </span>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="announcements">
+            <h3>Announcements</h3>
+            <div class="announcement-cards">
+                <div class="announcement-card">
+                    <h4 class="announcement-card-header">Some announcement</h4>
+                    <p class="announcement-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse error praesentium
+                    </p>
+                </div>
+                <hr>
+                <div class="announcement-card">
+                    <h4 class="announcement-card-header">Some announcement</h4>
+                    <p class="announcement-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse error praesentium
+                    </p>
+                </div>
+                <hr>
+                <div class="announcement-card">
+                    <h4 class="announcement-card-header">Some announcement</h4>
+                    <p class="announcement-body">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse error praesentium
+                    </p>
                 </div>
             </div>
-            <div class="bottom">
-                <div class="left">
+        </div>
+
+        <div class="trending">
+            <h3>Trending</h3>
+            <div class="trending-cards">
+                <div class="trending-card">
                     <span class="profile-img-container">
-                        <img src="./images/avatar2.png" alt="Morgan Oakley's Profile Image" class="profile-img">
+                        <img src="./images/avatar5.png" alt="Profile Image" class="profile-img">
                     </span>
-                    <div>
-                        <p class="bold-500">Hi there,</p>
-                        <h2 class="bold-text admin-name">Morgan Oakley (@morgan)</h2>
+                    <div class="content">
+                        <p class="profile-name">@tegan</p>
+                        <p class="trending-content">World peace builder</p>
                     </div>
                 </div>
-                <ul class="settings-tabs-container right">
-                    <li>New</li>
-                    <li>Upload</li>
-                    <li>Share</li>
-                </ul>
+                <div class="trending-card">
+                    <span class="profile-img-container">
+                        <img src="./images/avatar-1.jpg" alt="Profile Image" class="profile-img">
+                    </span>
+                    <div class="content">
+                        <p class="profile-name">@morgan</p>
+                        <p class="trending-content">Super cool project</p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <span class="profile-img-container">
+                        <img src="./images/avatar6.png" alt="Profile Image" class="profile-img">
+                    </span>
+                    <div class="content">
+                        <p class="profile-name">@kendal</p>
+                        <p class="trending-content">Life changing app</p>
+                    </div>
+                </div>
+                <div class="trending-card">
+                    <span class="profile-img-container">
+                        <img src="./images/avatar5.png" alt="Profile Image" class="profile-img">
+                    </span>
+                    <div class="content">
+                        <p class="profile-name">@alex</p>
+                        <p class="trending-content">No Traffic Maker</p>
+                    </div>
+                </div>
             </div>
-        </header>
-        <aside>
-            <div class="dashboard">
-                <span class="icon-container dashboard">
-                    <img src="./icons/view-dashboard.svg" alt="Dashboard Icon">
-                </span>
-                <span>Dashboard</span>
-            </div>
-
-            <ul>
-                <li>
-                    <span class="icon-container home">
-                        <img src="./icons/home-outline.svg" alt="Home Icon">
-                    </span>
-                    <span>Home</span>
-                </li>
-                <li>
-                    <span class="icon-container profile">
-                        <img src="./icons/card-account-details-outline.svg" alt="Profile Card Icon">
-                    </span>
-                    <span>Profile</span>
-                </li>
-                <li>
-                    <span class="icon-container messages">
-                        <img src="./icons/message-reply.svg" alt="Message Icon">
-                    </span>
-                    <span>Messages</span>
-                </li>
-                <li>
-                    <span class="icon-container history">
-                        <img src="./icons/clock-time-three-outline.svg" alt="History Icon">
-                    </span>
-                    <span>History</span>
-                </li>
-                <li>
-                    <span class="icon-container tasks">
-                        <img src="./icons/file-multiple.svg" alt="Tasks Icon">
-                    </span>
-                    <span>Tasks</span>
-                </li>
-                <li>
-                    <span class="icon-container communities">
-                        <img src="./icons/account-group.svg" alt="Communities Icon">
-                    </span>
-                    <span>Communities</span>
-                </li>
-            </ul>
-
-            <ul class="extra-settings">
-                <li>
-                    <span class="icon-container settings">
-                        <img src="./icons/cog.svg" alt="Settings Icon">
-                    </span>
-                    <span>Settings</span>
-                </li>
-
-                <li>
-                    <span class="icon-container support">
-                        <img src="./icons/help-box.svg" alt="Support Icon">
-                    </span>
-                    <span>Support</span>
-                </li>
-                <li>
-                    <span class="icon-container privacy">
-                        <img src="./icons/shield-check.svg" alt="Privacy Icon">
-                    </span>
-                    <span>Privacy</span>
-                </li>
-
-            </u>
-        </aside>
-        <main></main>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
