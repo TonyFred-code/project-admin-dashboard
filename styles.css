@@ -163,4 +163,87 @@ aside li .dashboard {
 
 main {
   grid-column: 2 / -1;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 22px 16px;
+  gap: 18px;
+}
+
+main > div {
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  gap: 12px;
+}
+
+.projects {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+
+.project-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(auto-fit, minmax(170px, 1fr));
+  justify-items: center;
+  gap: 20px;
+}
+
+.project-card {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.color-bar {
+  width: 5.5px;
+  background-color: #F0B429;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.project-card .content-area {
+  padding: 20px 12px;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+.project-icon-group {
+  margin-top: 8px;
+  justify-self: end;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  justify-items: center;
+}
+
+
+.announcement-cards {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.announcements hr {
+  margin: 16px auto;
+}
+
+.trending-cards {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  gap: 12px;
+}
+
+.trending-card {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.trending-card p {
+  color: #999999;
 }
