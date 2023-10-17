@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(./fonts/Roboto-Regular.ttf);
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +13,11 @@
 html,
 body {
   width: 100%;
-  /* font-family: "Roboto"; */
+  font-family: "Roboto";
 }
 
 body {
-  background-color: #e2e8f0;
+  background-color: #E2E8F0;
 }
 
 .container {
@@ -209,6 +215,11 @@ main > div {
   grid-template-rows: max-content 1fr max-content;
 }
 
+.content-area p {
+  padding: 4px 0;
+  color: rgb(128, 114, 114);
+}
+
 .project-icon-group {
   margin-top: 8px;
   justify-self: end;
@@ -225,8 +236,18 @@ main > div {
   padding: 20px;
 }
 
+.announcement-card-header {
+  font-size: 15px;
+}
+
 .announcements hr {
   margin: 16px auto;
+}
+
+.announcements p {
+  color: #7e7777;
+  font-size: 0.9rem;
+  padding: 4px 0;
 }
 
 .trending-cards {
@@ -245,5 +266,7 @@ main > div {
 }
 
 .trending-card p {
-  color: #999999;
+  color: #7e7777;
+  font-size: 0.9rem;
+  padding: 4px 0;
 }
