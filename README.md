@@ -9,7 +9,7 @@ A desktop layout for an admin dashboard.
 ## Live Preview
 
 [Live Preview](https://tonyfred-code.github.io/project-admin-dashboard/)
-![My Solution Screenshot](./images/Admin-Dashboard.png)
+![My Solution Screenshot](./images/Admin-dashboard.png)
 
 ## Usage
 
